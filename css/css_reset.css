@@ -1,0 +1,19 @@
+ /* basic */
+
+* {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  font-family: sans-serif;
+  box-sizing: content-box;
+}
+
+/* size of container with padding, border, margin inclusive */
+
+* {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
