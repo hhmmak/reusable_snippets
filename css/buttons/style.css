@@ -1,0 +1,56 @@
+body {
+    margin: 10%;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(50px, 100px));
+}
+.search{
+    font-weight: bold;
+    height: 30px;
+    width: 150px;
+    color: #0cbfb8;
+    border: 2px solid #0cbfb8;
+    border-radius: 15px;
+}
+
+
+.plus{
+    font-size: 20px;
+    height: 30px;
+    width: 30px;
+    color: white;
+    background-color: #0cbfb8;
+    border: 2px solid #0cbfb8;
+    border-radius: 50%;
+}
+
+/* With box shadow */
+.create{
+    font-size: 16px;
+    height: 30px;
+    width: 200px;
+    color: white;
+    background-color: #007aec;
+    border: 3px solid black;
+    box-shadow: 3px 3px black;
+}
+
+/* Click with animation */
+.click {
+    font-size: 14px;
+    padding: 3px 12px;
+    color: black;
+    border: 2px solid #aaa;
+    border-radius: 8px;
+    box-shadow: 2px 2px #aaa;
+}
+
+.click:hover {
+    color: #555;
+}
+
+.click:active {
+    box-shadow: none;
+    transform: translate(2px);
+}
+
