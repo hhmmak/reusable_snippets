@@ -8,17 +8,43 @@
     <title>Button Styling</title>
 </head>
 <body>
-    <div>
-        <button class="search">Search</button>
-    </div>
-    <div>
-        <button class="plus">+</button>
-    </div>
-    <div>
-        <button class="create">Create Account</button>
-    </div>
-    <div>
-        <button class="click">Click to Change</button>
-    </div>
+  <div class="box">
+    <button class="search">Search</button>
+    <ul>
+      <li>basic button</li>
+    </ul>
+  </div>
+  <div class="box">
+    <button class="round" id="plus" onclick="changeBackground(this)">+</button>
+    <ul>
+      <li>change button text</li>
+      <li>change button style/id (jQuery)</li>
+    </ul>
+  </div>
+  <div class="box">
+    <button class="log" onclick="loginLogout(this)">Login</button>
+    <ul>
+      <li>long button with box shadow</li>
+      <li>change button text</li>
+    </ul>
+  </div>
+  <div class="box">
+    <button class="click btn">Click to Change</button>
+    <ul>
+      <li>button with hover and active animation</li>
+    </ul>
+  </div>
+  <div class="box">
+    <button class="alert" onclick="alert('This is brower alert pop-up')">Alert</button>
+    <ul>
+      <li>trigger browser alert</li>
+    </ul>
+  </div>
+
+  <script
+  src="https://code.jquery.com/jquery-3.6.1.min.js"
+  integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+  crossorigin="anonymous"></script>
+  <script src="./script.js"></script>
 </body>
 </html>
