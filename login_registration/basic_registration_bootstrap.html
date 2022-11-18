@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body>
+    <div class="vh-100 d-flex align-items-center bg-dark">
+      <div class="col-lg-6 col-md-7 col-11 mx-auto bg-light p-5 rounded-3">
+            <div class="mb-5">
+                <h2>Register</h2>
+            </div>
+            <form action="/register" method="post">
+                <div class="mb-3">
+                    <label for="first_name" class="form-label">First Name</label>
+                    <input type="text" name="first_name" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label for="last_name" class="form-label">Last Name</label>
+                    <input type="text" name="last_name" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label for="birthday" class="form-label">Date of Birth</label>
+                    <input type="date" name="birthday" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="text" name="email" class="form-control" placeholder="sample@email.com">
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" name="password" class="form-control">
+                </div>
+                <div class="mb-4">
+                    <label for="password_confirm" class="form-label">Confirm Password</label>
+                    <input type="password" name="password_confirm" class="form-control">
+                    <small class="form-text text-muted">Must match passwords</small>
+                </div>
+                <div class="mb-3">
+                    <div class="d-grid d-lg-flex justify-content-lg-end">
+                        <input type="submit" value="Register" class="btn btn-primary col-lg-5">
+                    </div>
+                </div>
+            </form>
+        </div>
+      </div>
+</body>
+</html>
