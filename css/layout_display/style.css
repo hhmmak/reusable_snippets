@@ -1,15 +1,17 @@
 * {
   margin: 0;
   padding: 0;
+  border: 0;
   font-family: sans-serif;
+  box-sizing: border-box;
 }
 
 .section {
   margin: 50px 0;
 }
 
-/* Flex */
-.row {
+/* Flex, flex attribute */
+.row-flex-attr {
   display: flex;
   color: #fff;
 }
@@ -33,7 +35,7 @@
 }
 
 /* Float */
-#container{
+#container-float {
 	background-color: #426574;
 	width:960px;
   color: white;
@@ -54,4 +56,71 @@
 }
 .clear{
 	clear: both;
+}
+
+/* Flex vs Block */
+.container-flex-block{
+  width: 1000px;
+  background-color: silver;
+  margin: 0px auto;
+  padding: 10px;
+}
+
+.top-nav {
+  background-color: #87ecc7;
+  height: 150px;
+  margin: 10px;
+}
+
+.side-nav {
+  background-color: #72a9e8;
+  height: 300px;
+  width: 200px;
+  margin: 10px;
+}
+
+.main{
+  background-color: #ff6f6f;
+  height: 400px;
+  width: 730px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.sub-content {
+  background-color: #f8f871;
+  height: 200px;
+  width: 210px;
+  margin: 10px;
+}
+
+.footer {
+  background-color: #c579ff;
+  height: 120px;
+  width: 660px;
+  margin: 20px 5px 5px 5px;
+}
+
+/* Block/Inline/Inline-block */
+.top-nav-block {
+  display: block;
+}
+.side-nav-block {
+  display: inline-block;
+  vertical-align: top;
+}
+.main-block {
+  display: inline-block;
+  vertical-align: top;
+}
+.sub-content-block {
+  display: inline-block;
+}
+.footer-block {
+  display: block;
+}
+
+/* Flex */
+.row {
+  display: flex;
 }
