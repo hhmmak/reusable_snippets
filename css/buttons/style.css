@@ -1,56 +1,89 @@
+* {
+  font-family: 'Courier New', Courier, monospace;
+}
+
 body {
-    margin: 10%;
-    display: grid;
-    grid-template-columns: repeat(3, minmax(200px, 1fr));
-    grid-template-rows: repeat(auto-fit, minmax(50px, 100px));
-}
-.search{
-    font-weight: bold;
-    height: 30px;
-    width: 150px;
-    color: #0cbfb8;
-    border: 2px solid #0cbfb8;
-    border-radius: 15px;
+  margin: 10%;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(200px, 1fr));
+  grid-template-rows: repeat(auto-fill, 200px) 200px;
+  gap: 0.5rem;
+  background-color: #cccccc;
 }
 
+.box {
+  padding: 1rem;
+  border: 2px solid #bbb;
+  background-color: #fafafa;
+}
 
-.plus{
-    font-size: 20px;
-    height: 30px;
-    width: 30px;
-    color: white;
-    background-color: #0cbfb8;
-    border: 2px solid #0cbfb8;
-    border-radius: 50%;
+/* basic button */
+.search {
+  font-weight: bold;
+  height: 30px;
+  width: 150px;
+  color: #0a6966;
+  background-color: #fff;
+  border: 2px solid #0a6966;
+  border-radius: 15px;
+}
+
+/* round button with background/text change */
+.round {
+  font-size: 20px;
+  height: 30px;
+  width: 30px;
+  color: white;
+  border-radius: 50%;
+}
+
+#plus {
+  background-color: #0cbfb8;
+  border: 2px solid #0cbfb8;
+}
+
+#minus {
+  background-color: #124f4d;
+  border: 2px solid #124f4d;
 }
 
 /* With box shadow */
-.create{
-    font-size: 16px;
-    height: 30px;
-    width: 200px;
-    color: white;
-    background-color: #007aec;
-    border: 3px solid black;
-    box-shadow: 3px 3px black;
+.log {
+  font-size: 16px;
+  height: 30px;
+  width: 12rem;
+  color: #ffffff;
+  background-color: #007aec;
+  border: 3px solid black;
+  box-shadow: 3px 3px black;
 }
 
-/* Click with animation */
+/* animated button */
 .click {
-    font-size: 14px;
-    padding: 3px 12px;
-    color: black;
-    border: 2px solid #aaa;
-    border-radius: 8px;
-    box-shadow: 2px 2px #aaa;
+  font-size: 14px;
+  padding: 3px 12px;
+  color: black;
+  border: 2px solid #aaa;
+  border-radius: 8px;
+  box-shadow: 2px 2px #aaa;
 }
 
-.click:hover {
-    color: #555;
+/* alert button*/
+.alert {
+  font-size: 14px;
+  color: #ffffff;
+  padding: 3px 12px;
+  border: 3px solid #333;
+  background-color: #d83737;
+  border-radius: 8px;
 }
 
-.click:active {
-    box-shadow: none;
-    transform: translate(2px);
+/* button animation */
+.btn:hover {
+  color: #bbb;
 }
 
+.btn:active {
+  box-shadow: none;
+  transform: translate(2px);
+}
