@@ -15,4 +15,4 @@
 
 | Syntax | Description |
 | --- | --- |
-| `<\/?(strong\|p\|br\|span.*?)>` | text related HTML tags | <!--- copy from raw md: <\/?(strong|p|br|span.*?)> --> 
+| `<\/?(strong\|p\|br\|span\|em.*?)>` | text related HTML tags | <!--- copy from raw md: <\/?(strong|p|br|span.*?)> --> 
